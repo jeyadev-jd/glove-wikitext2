@@ -44,8 +44,8 @@
     "compression_ratio": 120.12531472832458
   },
   "training": {
-    "final_loss": 0.011541334652594132,
-    "training_time_s": 24.2396652999887,
+    "final_loss": 0.011541334697272698,
+    "training_time_s": 26.426175900007365,
     "batch_size_used": 4096,
     "peak_gpu_memory_mb": 72.47,
     "epochs_completed": 30,

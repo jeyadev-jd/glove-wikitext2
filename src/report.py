@@ -29,13 +29,13 @@ def _styles() -> Dict[str, ParagraphStyle]:
         "subtitle": ParagraphStyle("subtitle", parent=base["Normal"],
                                    fontSize=9, textColor=colors.grey,
                                    alignment=1, spaceAfter=10),
-        "h": ParagraphStyle("h", parent=base["Heading2"], fontSize=11.5,
+        "h": ParagraphStyle("h", parent=base["Heading2"], fontSize=10.5,
                             spaceBefore=8, spaceAfter=3,
                             textColor=colors.HexColor("#1f4e79")),
-        "body": ParagraphStyle("body", parent=base["BodyText"], fontSize=8.6,
-                               leading=11.4, alignment=TA_JUSTIFY, spaceAfter=4),
-        "eq": ParagraphStyle("eq", parent=base["BodyText"], fontSize=8.6,
-                             leading=11.5, fontName="Courier",
+        "body": ParagraphStyle("body", parent=base["BodyText"], fontSize=7.9,
+                               leading=9.9, alignment=TA_JUSTIFY, spaceAfter=4),
+        "eq": ParagraphStyle("eq", parent=base["BodyText"], fontSize=7.9,
+                             leading=10.0, fontName="Courier",
                              leftIndent=10, spaceAfter=4),
         "cap": ParagraphStyle("cap", parent=base["Normal"], fontSize=7.4,
                               textColor=colors.grey, alignment=1, spaceAfter=6),
@@ -43,7 +43,7 @@ def _styles() -> Dict[str, ParagraphStyle]:
 
 
 def _table(rows: Sequence[Sequence[Any]], col_widths: Optional[List[float]] = None,
-           font_size: float = 7.4) -> Table:
+           font_size: float = 6.9) -> Table:
     table = Table([[str(cell) for cell in row] for row in rows],
                   colWidths=col_widths, hAlign="LEFT")
     table.setStyle(TableStyle([
@@ -219,8 +219,6 @@ def build_report(results: Dict[str, Any], output_path: str) -> str:
         "prescribed by the paper."
     )
 
-    story.append(PageBreak())
-
     # -------------------------------------------------------- 5. training
     heading("5. Training Setup and Results")
     para(
@@ -253,7 +251,7 @@ def build_report(results: Dict[str, Any], output_path: str) -> str:
 
     loss_curve = results.get("loss_curve_path")
     if loss_curve and os.path.exists(loss_curve):
-        story.append(Image(loss_curve, width=11.5 * cm, height=7.4 * cm))
+        story.append(Image(loss_curve, width=9.0 * cm, height=5.8 * cm))
         story.append(Paragraph("Figure 1: mean weighted squared error per epoch.",
                                style["cap"]))
     else:
@@ -297,12 +295,10 @@ def build_report(results: Dict[str, Any], output_path: str) -> str:
 
     pca_path = results.get("pca_path")
     if pca_path and os.path.exists(pca_path):
-        story.append(Image(pca_path, width=13.5 * cm, height=10.4 * cm))
+        story.append(Image(pca_path, width=10.6 * cm, height=8.2 * cm))
         story.append(Paragraph(
             "Figure 2: PCA projection of frequent learned word vectors.",
             style["cap"]))
-
-    story.append(PageBreak())
 
     # ------------------------------------------- 7. official comparison
     heading("7. Comparison with Official GloVe (glove.6B.100d)")

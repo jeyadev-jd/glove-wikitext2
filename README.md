@@ -25,11 +25,11 @@ are reproduced in `results/`.
 | Non-zero co-occurrence entries | 1,109,952 of 400,000,000 (**99.72% sparse**) |
 | Dense vs sparse memory | 1.490 GB → 12.70 MB (**120× smaller**) |
 | Final training loss | 0.011541 |
-| Training time (30 epochs) | 24.24 s |
+| Training time (30 epochs) | 26.43 s |
 | Peak GPU memory | 72.5 MB |
 | Analogy accuracy (16 quadruples, 0 OOV) | **18.75%** |
 | Official `glove.6B.100d` on the same set | 81.25% |
-| GPU speedup vs CPU (3 epochs, identical config) | **4.58×** |
+| GPU speedup vs CPU (3 epochs, identical config) | **4.93×** |
 
 Sample nearest neighbours from the trained vectors:
 
