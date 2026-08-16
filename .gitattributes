@@ -1,0 +1,10 @@
+# Keep text files LF in the repository, but never touch binary artefacts.
+* text=auto eol=lf
+
+*.pdf   binary
+*.png   binary
+*.npy   binary
+*.pt    binary
+*.parquet binary
+*.zip   binary
+*.ipynb -text
