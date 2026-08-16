@@ -1,0 +1,3 @@
+model,vocab_size,analogies_total,analogies_evaluated,analogies_oov,correct,analogy_accuracy,evaluation_words,words_found,oov_rate_percent
+custom-wikitext2,20000,16,16,0,3,0.1875,56,56,0.0
+glove.6B.100d,400001,16,16,0,13,0.8125,56,56,0.0

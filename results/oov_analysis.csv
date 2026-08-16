@@ -1,0 +1,3 @@
+model,vocab_size,total_evaluation_words,words_found,words_missing,oov_count,oov_rate_percent,missing_words
+custom-wikitext2,20000,56,56,0,0,0.0,
+glove.6B.100d,400001,56,56,0,0,0.0,

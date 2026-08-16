@@ -1,0 +1,81 @@
+{
+  "device": {
+    "device": "cuda",
+    "gpu_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "vram_gb": 4.0
+  },
+  "config": {
+    "seed": 42,
+    "max_vocab_size": 20000,
+    "min_frequency": 5,
+    "embedding_dim": 100,
+    "window_size": 1,
+    "x_max": 100.0,
+    "alpha": 0.75,
+    "learning_rate": 0.05,
+    "epochs": 30,
+    "batch_size": 4096,
+    "epsilon": 1e-08,
+    "device": "auto",
+    "checkpoint_every": 5,
+    "init_scale": 0.5,
+    "log_every_epoch": true,
+    "min_batch_size": 512
+  },
+  "vocabulary": {
+    "raw_token_count": 1760383,
+    "unique_raw_tokens": 63985,
+    "vocab_size": 20000,
+    "filtered_token_count": 1683936,
+    "removed_rare_types": 43985,
+    "removed_token_count": 76447,
+    "percent_tokens_retained": 95.6573654710367,
+    "min_frequency": 5,
+    "max_vocab_size": 20000
+  },
+  "cooccurrence": {
+    "vocab_size": 20000,
+    "possible_dense_entries": 400000000.0,
+    "nonzero_entries": 1109952,
+    "sparsity_percent": 99.722512,
+    "density_percent": 0.277488,
+    "dense_memory_bytes": 1600000000.0,
+    "sparse_memory_bytes": 13319424.0,
+    "compression_ratio": 120.12531472832458
+  },
+  "training": {
+    "final_loss": 0.011541334652594132,
+    "training_time_s": 24.2396652999887,
+    "batch_size_used": 4096,
+    "peak_gpu_memory_mb": 72.47,
+    "epochs_completed": 30,
+    "training_pairs": 1109952
+  },
+  "evaluation": {
+    "analogy": {
+      "model": "custom-wikitext2",
+      "total_analogies": 16,
+      "evaluated": 16,
+      "oov_analogies": 0,
+      "correct": 3,
+      "accuracy": 0.1875
+    },
+    "oov": {
+      "model": "custom-wikitext2",
+      "vocab_size": 20000,
+      "total_evaluation_words": 56,
+      "words_found": 56,
+      "words_missing": 0,
+      "oov_count": 0,
+      "oov_rate_percent": 0.0,
+      "missing_words": ""
+    },
+    "queries_used": [
+      "king",
+      "computer",
+      "city",
+      "government",
+      "music"
+    ]
+  }
+}

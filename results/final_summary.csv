@@ -1,0 +1,2 @@
+vocab_size,embedding_dimension,window_size,min_frequency,nonzero_cooccurrences,final_loss,analogy_accuracy,oov_rate,training_time,device,gpu_name,peak_gpu_memory,batch_size_used,epochs
+20000,100,1,5,1109952,0.011541334652594132,0.1875,0.0,24.2396652999887,cuda,NVIDIA GeForce RTX 3050 Laptop GPU,72.47,4096,30

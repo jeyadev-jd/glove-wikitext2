@@ -1,0 +1,12 @@
+# Downloaded assets (corpus + pretrained vectors) — never committed or packaged
+data/
+*.zip
+
+# Training state
+checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/

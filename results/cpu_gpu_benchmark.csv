@@ -1,0 +1,3 @@
+device,gpu_name,epochs,training_time_s,mean_epoch_time_s,final_loss,batch_size,peak_gpu_memory_mb,gpu_speedup
+cpu,,3,12.672758000000613,4.204208433337044,0.045084367262783025,4096,,4.581
+cuda,NVIDIA GeForce RTX 3050 Laptop GPU,3,2.766462400002638,0.9053038333319515,0.04508436705657426,4096,118.7,4.581
