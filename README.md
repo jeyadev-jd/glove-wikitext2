@@ -43,6 +43,20 @@ Sample nearest neighbours from the trained vectors:
 The gap to official GloVe is expected and discussed in the report: 6B tokens vs
 1.76M, a 400k vocabulary vs 20k, and a window of 10 vs 1.
 
+### Training loss
+
+![Training loss over 30 epochs](results/loss_curve.png)
+
+### Embedding space (2-D PCA)
+
+![2-D PCA of frequent word vectors](results/pca_embeddings.png)
+
+### Full report
+
+The complete write-up — method, measured results, ablations and discussion — is
+in **[`report/glove_report.pdf`](report/glove_report.pdf)**, regenerated from the
+measured run by `src/report.py`.
+
 ---
 
 ## Features
