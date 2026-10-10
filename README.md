@@ -249,3 +249,15 @@ on the device. Measured peak VRAM for the baseline run is recorded in
 
 Pennington, Socher & Manning, *GloVe: Global Vectors for Word Representation*,
 EMNLP 2014.
+
+---
+
+## Author
+
+**Jeyadev R** · AI/ML Engineer & Full-Stack Developer · Chennai, India
+
+- Portfolio: [jeyadev.dev](https://jeyadev.dev/projects/glove-from-scratch)
+- GitHub: [@jeyadev-jd](https://github.com/jeyadev-jd)
+- LinkedIn: [r-jeyadev](https://www.linkedin.com/in/r-jeyadev)
+
+If this project is useful to you, a ⭐ on the repo helps others find it.

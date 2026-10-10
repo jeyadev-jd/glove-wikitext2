@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "GloVe from Scratch: Word Embeddings Trained on WikiText-2"
+abstract: "GloVe word embeddings built from first principles: sparse co-occurrence matrix (120x smaller than dense), hand-derived gradients verified against autograd, and manual AdaGrad, with no autograd or torch.optim. Trained on WikiText-2 in 26 s on a 4 GB laptop GPU, with analogy tests, ablations and a comparison against official GloVe vectors."
+authors:
+  - family-names: "R"
+    given-names: "Jeyadev"
+    email: "jeyadev2006@gmail.com"
+    affiliation: "Sri Ramachandra Institute of Higher Education and Research"
+repository-code: "https://github.com/jeyadev-jd/glove-wikitext2"
+url: "https://jeyadev.dev/projects/glove-from-scratch"
+keywords:
+  - "Python"
+  - "PyTorch"
+  - "CUDA"
+  - "NumPy"
+date-released: "2026-10-10"
